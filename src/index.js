@@ -6,11 +6,11 @@ const path = require("path");
 const dotenv = require("dotenv");
 dotenv.config();
 const fs = require("fs");
-const config = require("./config.json");
+
 const mongoose = require("mongoose");
 module.exports = client;
 client.commands = new Collection();
-client.prefix = config.prefix;
+client.prefix = process.env.prefix;
 client.aliases = new Collection();
 client.categories = fs.readdirSync(path.resolve("src/commands"));
 ["command"].forEach((handler) => {
