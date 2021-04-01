@@ -16,7 +16,7 @@ module.exports = {
     SystemXp.find({
       lb: "all",
     })
-      .sort([[("level", "xp"), "descending"]])
+      .sort([["level", "descending"]]).sort([["xp", "descending"]])
       .exec((err, res) => {
         if (err) console.log(err);
 
