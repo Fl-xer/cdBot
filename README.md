@@ -15,6 +15,11 @@ and replace the variables with your own. xCDx will then create a giveaway, and b
 
 # Powerful Moderation Commands to keep your server squeaky clean
 
+We have many powerful moderation commands that keep your server clean from spam/bad words/mass pings and more.
+A few to mention are, >purge preventing anyone to spam and mass ping, profanity filter, >warn to warn a user, 
+>kick, to kick a user, >ban to ban and user and so on. Our Moderation system is very powerful and was reviwed to rival
+bots like MEE6, Dyno, and more. 
+
 # An excellent state of the art leveling system, tested and approved
 
 # Quicky and easy logging, so you know exactly whats happening in your server
