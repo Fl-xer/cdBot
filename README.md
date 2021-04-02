@@ -65,7 +65,11 @@ Best of all, our professional, ready to help Support Staff is ready to help you 
 
 # Our bot is completly free to use!
 
-And thats just to name a *few*! So what are you waiting for? Go ahead and invite the bot now by clicking [here](https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot)
+Our bot is ***__completly__*** free, no charge required. There is no premium plan or anything, its the same excellent feature-loaded bot for everyone!
+
+# So what are you waiting for?!
+
+And thats just to name a *few*! Go ahead and invite the bot now by clicking [here](https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot)
 
 
 Are you having an issue? You can visit our wiki, or report an issue in our Github, or at our [Discord Server](https://discord.gg/Z5wXwWrtuW)
