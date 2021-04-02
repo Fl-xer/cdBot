@@ -2,7 +2,7 @@ const { Client, Message, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'purge',
-    category: "Utilities",
+    category: "Moderation",
     description: "Deletes messages from channel",
     cooldown: 0,
     /** 

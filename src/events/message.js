@@ -4,6 +4,8 @@ const { Collection } = require("discord.js");
 const Timeout = new Collection();
 const ms = require("ms");
 const SystemXp = require("../models/levels.js");
+const ServerMod = require("../models/settings.js");
+const wordsFilter = require("../wordFilter.json");
 
 client.on("message", async (message) => {
   if (message.author.bot) return;
@@ -20,12 +22,13 @@ client.on("message", async (message) => {
         prefix +
         "help`"
     );
+
+  //? Level System
   let data = await SystemXp.findOne({
     serverID: message.member.guild.id,
-    "members.id": message.member.id,
   });
-  if (!data) {
 
+  if (!data) {
     const newData = new SystemXp({
       serverID: message.member.guild.id,
       members: [],
@@ -40,34 +43,74 @@ client.on("message", async (message) => {
     newData.save().catch((err) => console.log(err));
   } else {
     const index = data.members.findIndex((x) => x.id === message.author.id);
-    const newXP = (data.members[index].xp) + (Math.floor(Math.random() * 10) + 1);
-    const id = message.author.id;
-
-    await SystemXp.updateOne(
-      { "members.id": id},
-      {
-        $set: {
-          "members.$.xp": newXP,
-        },
-      }
-    );
-
-
-
-    if (data.members[index].level * 100 <= data.members[index].xp) {
-      const newLEVEL = data.members[index].level + 1;
+    if (index === -1) {
+      data.members.unshift({
+        id: message.author.id,
+        name: message.author.username,
+        xp: 0,
+        level: 1,
+        invites: 0,
+      });
+      data.save().catch((err) => console.log(err));
+    } else {
+      const newXP =
+        data.members[index].xp + (Math.floor(Math.random() * 10) + 1);
+      const id = message.author.id;
 
       await SystemXp.updateOne(
-        { "members.id": id},
+        { "members.id": id },
         {
           $set: {
-            "members.$.xp": 0,
-            "members.$.level": newLEVEL,
+            "members.$.xp": newXP,
           },
         }
       );
 
-      message.reply(`Congrats for the level ${newLEVEL}`);
+      if (data.members[index].level * 100 <= data.members[index].xp) {
+        const newLEVEL = data.members[index].level + 1;
+
+        await SystemXp.updateOne(
+          { "members.id": id },
+          {
+            $set: {
+              "members.$.xp": 0,
+              "members.$.level": newLEVEL,
+            },
+          }
+        );
+
+        message.reply(`Congrats for the level ${newLEVEL}`);
+      }
+    }
+  }
+
+  //? Setup a mod config
+  data = await ServerMod.findOne({
+    serverID: message.member.guild.id,
+  });
+
+  if (!data) {
+    const newConfig = new ServerMod({
+      serverID: message.member.guild.id,
+      welcomeSys: false,
+      welcomeMsg: "",
+      welcomeChannel: "",
+      goodbyeSys: false,
+      goodbyeMsg: "",
+      goodbyeChannel: "",
+      profanityFilter: false,
+      autoModLogSys: false,
+      autoModLogChannel: "",
+    });
+    newConfig.save().catch((err) => console.log(err));
+  }
+
+  if (data.profanityFilter) {
+    for (i = 0; i < wordsFilter.words.length; i++) {
+      if (~message.content.indexOf(wordsFilter.words[i])) {
+         message.reply("Language!");
+         return message.delete();
+      }
     }
   }
 

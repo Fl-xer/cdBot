@@ -45,11 +45,22 @@ module.exports = {
     data = await SystemXp.findOne({
       serverID: member.guild.id,
     });
+
+    array = data.members;
+
+    array.sort(function (a, b) {
+      return a["level"] - b["level"] || a["xp"] - b["xp"];
+    });
+
+    array.reverse();
+
     const index = data.members.findIndex((x) => x.id === member.id);
     const rank = new canvacord.Rank()
       .setAvatar(member.user.displayAvatarURL({ format: "jpg" }))
       .setCurrentXP(data.members[index].xp)
       .setRequiredXP(data.members[index].level * 100)
+      .setLevel(data.members[index].level)
+      .setRank(array.findIndex((x) => x.id === member.id)+1)
       .setStatus(member.user.presence.status)
       .setProgressBar("#FFFFFF", "COLOR")
       .setUsername(member.user.username)
