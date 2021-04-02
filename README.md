@@ -20,7 +20,7 @@ To list a few, we have:
 
 # Profanity filter that blocks **500 different words**
 
-# 27/7 hosting, so you have the bot when you need it
+# 24/7 hosting, so you have the bot when you need it
 
 # An excellent support team, ready to help when you need them
 
