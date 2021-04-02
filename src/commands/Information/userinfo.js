@@ -97,7 +97,7 @@ module.exports = {
             : member.roles.highest.name
         }`,
         `**➥ Roles [${roles.length}]:** ${
-          roles.length < 10
+          roles.length <= 10
             ? roles.join(", ")
             : roles.length > 10
             ? trimArray(roles)
