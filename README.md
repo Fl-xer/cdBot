@@ -26,3 +26,5 @@ To list a few, we have:
 
 And thats just to name a *few*! So what are you waiting for? Go ahead and invite the bot now at:
 https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot
+
+Are you having an issue? You can visit our wiki, or report an issue in our Github, or at our Discord Server: https://discord.gg/Z5wXwWrtuW
