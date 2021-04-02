@@ -51,6 +51,8 @@ Our application feature is one of our best features ever! Though it is a bit com
 
 # Profanity filter that blocks **500 different words**
 
+Our profanity filter is an advanced filter that blocks about 500 words, and it can be toggled by an simple click. If you want to see which words we block, you can go [here](https://github.com/web-mech/badwords/blob/master/lib/lang.json). The bot will delete all messages that are sent by members (excluding people with Administrator permissions) which contain these words. Of course, you can toggle it off, but we **highly recommend you keep it on, to keep a safe community for your Discord Server.** The filter comes on by default. 
+
 # 24/7 hosting, so you have the bot when you need it
 
 # An excellent support team, ready to help when you need them
