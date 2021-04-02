@@ -45,6 +45,8 @@ Our bot can easily track who invited who, and using our reward command, you can 
 
 # An application command so you can have people apply right through Discord
 
+Our application feature is one of our best features ever! Though it is a bit complex (one of the only commands that are complex in our bot) it is still really advanced and an interesting new tool. You set up yes/no, long answer, short answer questions, up to 100 questions per application which are saved in an channel made by the bot called Questions-Channel. The people that want to join do >apply (application name), and answer the questions, and after they submit the application, it is sent to an channel called archive which is also made by the bot. You can accept, deny, or remove the application there. You may ask what is the difference between deny and remove, the difference is that if you apply or deny the application, it stays in the archive channel, but if you remove it gets removed from the archive channel. 
+
 # Welcome messages, leave messages, kick messages, and ban messages
 
 # Profanity filter that blocks **500 different words**
