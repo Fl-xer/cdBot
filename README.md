@@ -15,9 +15,11 @@ and replace the variables with your own. xCDx will then create a giveaway, and b
 
 # Powerful Moderation Commands to keep your server squeaky clean
 
-WWe have many powerful moderation commands that keep your server clean from spam/bad words/mass pings and more. A few to mention are, >purge preventing anyone to spam and mass ping, profanity filter, >warn to warn a user, kick, to kick a user, >ban to ban and user and so on. Our Moderation system is very powerful and was reviwed to rival bots like MEE6, Dyno, and more 
+We have many powerful moderation commands that keep your server clean from spam/bad words/mass pings and more. A few to mention are, >purge preventing anyone to spam and mass ping, profanity filter, >warn to warn a user, kick, to kick a user, >ban to ban and user and so on. Our Moderation system is very powerful and was reviwed to rival bots like MEE6, Dyno, and more 
 
 # An excellent state of the art leveling system, tested and approved
+
+Our state of the art leveling system has been tested and approved by professionals. There is no buisness of going to another website to see the leaderboard, everythings right in Discord, and the bot understands spam, so that means your server members cant spam to get points like you can in other bots! (Psst, you can use auto-mod to stop spam!) The leveling system comes on by default, ready to use, or you can manually set it up/or turn it off if it is not needed. 
 
 # Quicky and easy logging, so you know exactly whats happening in your server
 
@@ -37,3 +39,5 @@ And thats just to name a *few*! So what are you waiting for? Go ahead and invite
 https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot
 
 Are you having an issue? You can visit our wiki, or report an issue in our Github, or at our Discord Server: https://discord.gg/Z5wXwWrtuW
+
+DISCLAIMER: We are still working on some features, and some features are not present yet. 
