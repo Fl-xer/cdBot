@@ -23,6 +23,17 @@ Our state of the art leveling system has been tested and approved by professiona
 
 # Quicky and easy logging, so you know exactly whats happening in your server
 
+Quicky and easly you can set up logging for many different things, like:
+- Invite logging
+- Member Join/Leave logging
+- Channel Create/Update/Delete logging
+- Emoji Create/Update/Delete Logging
+- Ban logging
+- Member Updates Logging for Roles and Nickname
+- Message Update/Delete/Purge Logging
+
+Best of all, it does not take more than 5 minutes to set it up! All you have to do is choose your channel, choose what things you want to log, and not log, and done!
+
 # Invite tracking so you know who invited who, and can reward them
 
 # An application command so you can have people apply right through Discord
