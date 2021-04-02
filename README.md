@@ -49,6 +49,8 @@ Our application feature is one of our best features ever! Though it is a bit com
 
 # Welcome messages, leave messages, kick messages, and ban messages
 
+Our bot can give welcome messages, leave messages, kick messages, and ban messages, customizable down to the bone. You can choose which channel (or in some cases 2, 3, or even 4) you want the messages to send to, what should be in the messages, whether it should be sent in an DM or in an channel, or both, and much more. Some bots dont put much emphasis on this, but we believe it is important that you know who joined, and who was kicked/banned by whom, so you know exactly who did a bad thing. 
+
 # Profanity filter that blocks **500 different words**
 
 Our profanity filter is an advanced filter that blocks about 500 words, and it can be toggled by an simple click. If you want to see which words we block, you can go [here](https://github.com/web-mech/badwords/blob/master/lib/lang.json). The bot will delete all messages that are sent by members (excluding people with Administrator permissions) which contain these words. Of course, you can toggle it off, but we **highly recommend you keep it on, to keep a safe community for your Discord Server.** The filter comes on by default. 
