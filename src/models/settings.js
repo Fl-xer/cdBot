@@ -9,6 +9,7 @@ const dataSchema = mongoose.Schema({
   goodbyeMsg: String,
   goodbyeChannel: String,
   profanityFilter: Boolean,
+  linkFilter: Boolean,
   autoModLogSys: Boolean,
   autoModLogChannel: String,
 });

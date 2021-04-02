@@ -99,6 +99,7 @@ client.on("message", async (message) => {
       goodbyeMsg: "",
       goodbyeChannel: "",
       profanityFilter: false,
+      linkFilter: false,
       autoModLogSys: false,
       autoModLogChannel: "",
     });
