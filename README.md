@@ -6,6 +6,13 @@ To list a few, we have:
 
 # An Advanced Giveaways system that can help you host your giveaways for free
 
+Our Giveaway system can help you create and manage an giveaway for free, 
+easily, and with one of the most powerful and advanced giveaway systems we have created.
+It takes about thirty seconds to create an giveaway, all you have to do is send a message in 
+this format: >gstart (channel) (duration) (number of winners) (what you are giving away)
+and replace the variables with your own. xCDx will then create a giveaway, and boom your set to go!
+
+
 # Powerful Moderation Commands to keep your server squeaky clean
 
 # An excellent state of the art leveling system, tested and approved
