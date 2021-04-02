@@ -19,7 +19,7 @@ module.exports = {
     const embed = new MessageEmbed()
       .setTitle("Server Moderation Settings!")
       .setThumbnail(message.guild.iconURL({ dynamic: true }))
-      .setDescription(`Profanity filter: ${data.welcomeSys ? "✅" : "❌"}\n`)
+      .setDescription(`Profanity filter: ${data.profanityFilter ? "✅" : "❌"}\n`)
       .setFooter(
         `• Requested by: ${message.author.tag}`,
         message.author.displayAvatarURL({ format: "png" })
