@@ -53,9 +53,9 @@ Our bot can easily track who invited who, and using our reward command, you can 
 
 # An excellent support team, ready to help when you need them
 
-And thats just to name a *few*! So what are you waiting for? Go ahead and invite the bot now at:
-https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot
+And thats just to name a *few*! So what are you waiting for? Go ahead and invite the bot now by click [here](https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot)
 
-Are you having an issue? You can visit our wiki, or report an issue in our Github, or at our Discord Server: https://discord.gg/Z5wXwWrtuW
+
+Are you having an issue? You can visit our wiki, or report an issue in our Github, or at our [Discord Server](https://discord.gg/Z5wXwWrtuW)
 
 DISCLAIMER: We are still working on some features, and some features are not present yet. 
