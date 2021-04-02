@@ -53,6 +53,17 @@ module.exports = {
       .map((role) => role.toString())
       .slice(0, -1);
     const userFlags = member.user.flags.toArray();
+
+    function trimArray(arr, maxLen = 10) {
+			if (arr.length > maxLen) {
+				const len = arr.length - maxLen;
+				arr = arr.slice(0, maxLen);
+				arr.push(`${len} more...`);
+			}
+			return arr;
+		}
+
+    
     const embed = new MessageEmbed()
       .setThumbnail(member.user.displayAvatarURL({ dynamic: true, size: 512 }))
       .setAuthor(`${member.user.username}#${member.user.discriminator}`)
@@ -89,7 +100,7 @@ module.exports = {
           roles.length < 10
             ? roles.join(", ")
             : roles.length > 10
-            ? this.client.utils.trimArray(roles)
+            ? trimArray(roles)
             : "None"
         }`,
         `\u200b`,
