@@ -48,8 +48,14 @@ module.exports = {
 				`> Speed: ${core.speed}MHz`,
 				`**❯ Memory:**`,
 				`> Total: ${formatBytes(process.memoryUsage().heapTotal)}`,
-				`> Used: ${formatBytes(process.memoryUsage().heapUsed)}`
+				`> Used: ${formatBytes(process.memoryUsage().heapUsed)}`,
+				'\u200b'
 			])
+			.addField('Support me 👇', [
+				`<:discord:827328121837322260> [Join my server](${"https://discord.gg/AKDzZ8wrTP"})`,
+				`💌 [Invite me to your server!](${"https://discord.com/api/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot"})`,
+			])
+
             .setFooter(
                 `• Requested by: ${user.tag}`,
                 user.displayAvatarURL({ format: "png" })

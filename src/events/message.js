@@ -20,36 +20,57 @@ client.on("message", async (message) => {
         prefix +
         "help`"
     );
-  SystemXp.findOne(
-    {
-      userID: message.author.id,
-    },
-    async (err, data) => {
-      if (err) console.log(err);
-      if (!data) {
-        const newData = new SystemXp({
-          userID: message.author.id,
-          name: message.author.username,
-          level: 1,
-          xp: 0,
-          lb: "all",
-        });
-        newData.save().catch((err) => console.log(err));
-      } else {
-        const newXP = Math.floor(Math.random() * 10) + 1;
+  let data = await SystemXp.findOne({
+    serverID: message.member.guild.id,
+    "members.id": message.member.id,
+  });
+  if (!data) {
 
-        if (data.level * 100 <= data.xp) {
-          data.level += 1;
-          data.xp = 0;
-          data.save().catch((err) => console.log(err));
-          message.reply(`Congrats for the level ${data.level}`);
-        } else {
-          data.xp += newXP;
-          data.save().catch((err) => console.log(err));
-        }
+    const newData = new SystemXp({
+      serverID: message.member.guild.id,
+      members: [],
+    });
+    newData.members.unshift({
+      id: message.author.id,
+      name: message.author.username,
+      xp: 0,
+      level: 1,
+      invites: 0,
+    });
+    newData.save().catch((err) => console.log(err));
+  } else {
+    const index = data.members.findIndex((x) => x.id === message.author.id);
+    const newXP = (data.members[index].xp) + (Math.floor(Math.random() * 10) + 1);
+    const id = message.author.id;
+
+    await SystemXp.updateOne(
+      { "members.id": id},
+      {
+        $set: {
+          "members.$.xp": newXP,
+        },
       }
+    );
+
+
+
+    if (data.members[index].level * 100 <= data.members[index].xp) {
+      const newLEVEL = data.members[index].level + 1;
+
+      await SystemXp.updateOne(
+        { "members.id": id},
+        {
+          $set: {
+            "members.$.xp": 0,
+            "members.$.level": newLEVEL,
+          },
+        }
+      );
+
+      message.reply(`Congrats for the level ${newLEVEL}`);
     }
-  );
+  }
+
   if (!message.content.startsWith(prefix)) return;
   if (!message.guild) return;
   const args = message.content.slice(prefix.length).trim().split(/ +/g);
