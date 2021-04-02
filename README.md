@@ -57,9 +57,15 @@ Our profanity filter is an advanced filter that blocks about 500 words, and it c
 
 # 24/7 hosting, so you have the bot when you need it
 
+Our bot is online 24/7 so you ***never*** need to worry if our bot is offline (true, sometimes our bot does go offline, or we make it go offline for reboots/recoding if that happens just join our [Discord Server](https://discord.gg/Z5wXwWrtuW) just to be ready!) 24/7 availability means anyone can use it anytime, which really does add to your server, because you have down to the bare bone customizable, completely free, no ad bot!
+
 # An excellent support team, ready to help when you need them
 
-And thats just to name a *few*! So what are you waiting for? Go ahead and invite the bot now by click [here](https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot)
+Best of all, our professional, ready to help Support Staff is ready to help you if any issue occours either in our [Github](https://github.com/rmotafreitas/cdBot/issues) or in our [Discord Server](https://discord.gg/Z5wXwWrtuW). Either away, you get support quickly and easily, and for free. 
+
+# Our bot is completly free to use!
+
+And thats just to name a *few*! So what are you waiting for? Go ahead and invite the bot now by clicking [here](https://discord.com/oauth2/authorize?client_id=826966063849537567&permissions=8&scope=bot)
 
 
 Are you having an issue? You can visit our wiki, or report an issue in our Github, or at our [Discord Server](https://discord.gg/Z5wXwWrtuW)
