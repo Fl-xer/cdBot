@@ -36,6 +36,13 @@ Best of all, it does not take more than 5 minutes to set it up! All you have to 
 
 # Invite tracking so you know who invited who, and can reward them
 
+Invite tracking, one of our best features! 
+
+- Tracks users invites by invite urls
+- Sends welcome message that displays user that joined along with who invited them in a given channel
+
+Our bot can easily track who invited who, and using our reward command, you can reward them an role so they feel proud of their hard work. OR, you can also choose they win for an giveaway your doing, so they feel rewarded still!
+
 # An application command so you can have people apply right through Discord
 
 # Welcome messages, leave messages, kick messages, and ban messages
