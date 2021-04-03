@@ -1,4 +1,4 @@
-# xCDx Discord Bot
+# xCDx Discord Bot | Multi-Purpose Discord Bot
 
 xCDx Discord Bot is an multi-purpose Discord Bot, loaded with features and interesting advanced tools. Its an very easy to use, very easy to setup, almost every aspect of xCDx is easy to use, as well as kid-friendly. We have many features that are really important, and one of our reviews said: **"Can rival popular bots like [MEE6](mee6.xyz), [Dyno](dyno.gg), and [Carl](carl.gg)."** With an very friendly and helpful staff, loaded with features, and completly free to use (unlike bots like MEE6, which are basically pay to win) xCDx is easily an excellent bot for anyone!
 
