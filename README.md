@@ -4,7 +4,7 @@ xCDx Discord Bot is an multi-purpose Discord Bot, loaded with features and inter
 
 Want to know some features that we have? To list a few we have:
 
-## An Advanced Giveaways system that can help you host your giveaways for free
+### An Advanced Giveaways system that can help you host your giveaways for free
 
 Our Giveaway system can help you create and manage an giveaway for free, 
 easily, and with one of the most powerful and advanced giveaway systems we have created.
